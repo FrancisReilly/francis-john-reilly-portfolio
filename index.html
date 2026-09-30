@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Francis John Reilly — StudyGeek Wireframe</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;font-family:Arial,Helvetica,sans-serif;background:#f4f4f4;color:#161616}
+body{display:flex;flex-direction:column}
+header{height:72px;background:#fff;border-bottom:1px solid #ddd;display:flex;align-items:center;justify-content:space-between;padding:0 28px;flex:none}
+.name{font-weight:700;font-size:18px}
+.meta{font-size:13px;color:#666}
+.actions{display:flex;gap:10px}
+a{color:inherit;text-decoration:none}
+.button{border:1px solid #bbb;background:#fff;border-radius:6px;padding:9px 13px;font-size:13px}
+.button.primary{background:#161616;color:#fff;border-color:#161616}
+main{flex:1;min-height:0;display:flex;align-items:stretch;justify-content:center;padding:18px}
+.viewer{width:min(1180px,100%);height:100%;background:#ddd;border:1px solid #ccc;box-shadow:0 8px 30px rgba(0,0,0,.08)}
+iframe{width:100%;height:100%;border:0;background:#777}
+footer{height:34px;display:flex;align-items:center;justify-content:center;color:#777;font-size:11px;flex:none}
+@media(max-width:700px){
+header{height:auto;min-height:64px;padding:12px 14px;gap:12px}
+.name{font-size:15px}.meta{display:none}.actions{gap:6px}.button{padding:8px 9px;font-size:12px}
+main{padding:8px}.viewer{border:0}footer{display:none}
+}
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <div class="name">Francis John Reilly</div>
+    <div class="meta">StudyGeek — UX/UI Wireframe</div>
+  </div>
+  <div class="actions">
+    <a class="button" href="StudyGeek_Wireframe.pdf" target="_blank" rel="noopener">Open PDF</a>
+    <a class="button primary" href="StudyGeek_Wireframe.pdf" download>Download</a>
+  </div>
+</header>
+
+<main>
+  <div class="viewer">
+    <iframe src="StudyGeek_Wireframe.pdf#view=FitH" title="StudyGeek wireframe PDF"></iframe>
+  </div>
+</main>
+
+<footer>Interactive PDF viewer </footer>
+</body>
+</html>
